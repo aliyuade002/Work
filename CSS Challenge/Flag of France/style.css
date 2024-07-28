@@ -1,0 +1,31 @@
+html, body{
+   margin: 0;
+   padding: 0;
+   background-color: black;
+}
+:root{
+   --green: #008000;
+   --white: #fff;
+   --green_2: #008000;
+   --flag-height: 200px; 
+}
+.flag-nigeria{
+   height: var(--flag-height);
+   width: calc(var(--flag-height) * 3/2);
+   margin: 5em auto;
+   /* display: flex; */
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+/* .stripe{
+   flex-grow: 1;   
+} */
+.green{
+   background-color: var(--green);
+}
+.white{
+   background-color: var(--white );
+}
+.green_2{
+   background-color: var(--green);
+}
