@@ -1,0 +1,30 @@
+html, body{
+   margin: 0;
+   padding: 0;
+}
+:root{
+   --black: #000;
+   --red: #de0002;
+   --yellow: #ffce00;
+   --flag-height: 200px;
+}
+.flag-germany{
+   height: var(--flag-height);
+   width: calc(var(--flag-height) * 5/3);
+   display: grid;
+   margin: 20px auto;
+   /* display: flex;
+   flex-direction: column;*/
+}
+/* .stripe{
+   flex-direction: 1;
+} */
+.black{
+   background-color: var(--black);
+}
+.red{
+   background-color: var(--red);
+}
+.yellow{
+   background-color: var(--yellow);
+}
