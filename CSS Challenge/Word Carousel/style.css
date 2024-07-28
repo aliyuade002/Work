@@ -1,0 +1,43 @@
+html, body{
+   margin: 0;
+   padding: 0;
+}
+:root{
+   --bg-word: #6a0d83;
+   --color: #cbcbcb;
+}
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+h1::after{
+   content: "";
+   animation: swap 6s infinite;
+   background-color: var(--bg-word);
+   padding: 10px;
+   color: var(--color);
+   border-radius: 10px; 
+}
+
+@keyframes swap{
+    0%{
+      content: "Programming";
+   }
+   25%{
+      content: "Freecodecamp"; 
+   }
+   50%{
+      content: "Hashnode";
+      
+   }
+   75%{
+      content: "you Musa Wakili ML";
+      
+   }
+   100%{
+      content: "Programming ";
+
+    }
+}
